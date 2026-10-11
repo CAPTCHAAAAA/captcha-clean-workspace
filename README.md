@@ -3,6 +3,8 @@
 > **The Industrial Clean Workspace, Anti-Slop Architecture & Engineering Discipline Protocol for AI Coding Agents.**  
 > *Author: CAPTCHA (@CAPTCHAAAAA)*
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 [![Protocol Version](https://img.shields.io/badge/Protocol-v1.0.0-blue.svg)](#)
 [![Antigravity Ready](https://img.shields.io/badge/Antigravity-Plugin%20%26%20Skill-emerald.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
