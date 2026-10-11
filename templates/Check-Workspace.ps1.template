@@ -1,0 +1,22 @@
+# Workspace Integrity Guard Script
+$ErrorActionPreference = "Stop"
+
+Write-Host "Checking workspace invariants..." -ForegroundColor Cyan
+
+# 1. Ensure Local/ directory exists
+if (-not (Test-Path -Path "Local")) {
+    Write-Error "[FAIL] Dedicated 'Local/' headquarters directory is missing!"
+} else {
+    Write-Host "[OK] 'Local/' headquarters exists." -ForegroundColor Green
+}
+
+# 2. Check for unexpected scratch files in root
+$forbiddenRootPatterns = @("*.tmp", "*.log", "scratch*", "temp*", "*.bak")
+foreach ($pat in $forbiddenRootPatterns) {
+    $found = Get-ChildItem -Path . -Filter $pat -File -Depth 0
+    if ($found) {
+        Write-Warning "[WARN] Found untracked scratch file in root: $($found.Name). Move it to Local/scratch/!"
+    }
+}
+
+Write-Host "[OK] Workspace invariants are satisfied." -ForegroundColor Green

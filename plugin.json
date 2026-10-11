@@ -1,0 +1,12 @@
+{
+  "name": "captcha-clean-workspace",
+  "displayName": "CAPTCHA Clean Workspace & Anti-Slop Governance",
+  "version": "1.0.0",
+  "description": "The Industrial Clean Workspace, Anti-Slop Architecture & Engineering Discipline Protocol for AI Coding Agents. Zero temporary junk, pure worktree isolation, facade decoupling, and verifiable delivery.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Initialize this project with the CAPTCHA clean workspace structure",
+    "Audit this codebase for monolithic slop and facade decoupling",
+    "Set up an isolated git worktree with a standard WORKTREE.md contract"
+  ]
+}

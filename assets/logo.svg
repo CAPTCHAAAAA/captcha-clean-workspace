@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#059669" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)"/>
+  
+  <!-- Outer glowing ring / shield frame -->
+  <path d="M 256,76 
+           C 362,76 406,128 406,242 
+           C 406,356 312,416 256,442 
+           C 200,416 106,356 106,242 
+           C 106,128 150,76 256,76 Z" 
+        fill="none" 
+        stroke="url(#shield-grad)" 
+        stroke-width="14" 
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#shadow)"/>
+
+  <!-- Inner Clean Geometric Cube (Physical Isolation & Architecture) -->
+  <!-- Top Face -->
+  <polygon points="256,162 334,207 256,252 178,207" 
+           fill="url(#shield-grad)" 
+           opacity="0.95"/>
+  <!-- Left Face -->
+  <polygon points="178,207 256,252 256,342 178,297" 
+           fill="#047857" 
+           opacity="0.85"/>
+  <!-- Right Face -->
+  <polygon points="256,252 334,207 334,297 256,342" 
+           fill="#0e7490" 
+           opacity="0.85"/>
+
+  <!-- Center Verification Check & Core Lock -->
+  <circle cx="256" cy="252" r="14" fill="#ffffff" filter="url(#shadow)"/>
+</svg>

@@ -1,0 +1,28 @@
+# Worktree Contract: {{TASK_NAME}}
+
+> Branch: `{{BRANCH_NAME}}`  
+> Base Commit: `{{BASE_COMMIT}}`  
+> Created: `{{DATE}}`  
+
+---
+
+## 1. Scope & Boundaries (任务范围与绝对边界)
+- **Primary Goal**: Describe exactly what this worktree intends to implement or fix.
+- **Forbidden Paths**: Declare files/directories that this worktree is STRICTLY FORBIDDEN from modifying.
+- **Invariants**: Architectural invariants that must never be broken during this task.
+
+---
+
+## 2. Activity Log (推进日志)
+*Record chronological engineering actions, key decisions, and test outputs here. Keep scratch logs inside this file rather than polluting the root repository.*
+
+- `[{{TIME}}]`: Worktree initialized.
+
+---
+
+## 3. Delivery Gate (交付与合并门禁)
+Before merging back to main or archiving this worktree, all gates below MUST pass:
+- [ ] Static typecheck / lint passes with 0 errors.
+- [ ] Unit tests pass with 0 failures.
+- [ ] Real runtime execution verified with fresh build artifacts.
+- [ ] Evidence documented.

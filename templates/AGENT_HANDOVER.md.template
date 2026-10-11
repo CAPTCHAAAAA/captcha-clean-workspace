@@ -1,0 +1,30 @@
+# AI Agent Handover & Constraints Manual
+
+> Project: {{PROJECT_NAME}}  
+> Last Updated: {{DATE}}  
+> Purpose: Standard handover document for any new AI assistant or engineer taking over this repository.
+
+---
+
+## 1. Ground Truth & Current Status (当前事实与最新基线)
+- **Active Release Version**: `v1.0.0`
+- **Current Stable Branch**: `main`
+- **Known Working State**: Describe the currently running, fully verified product baseline.
+
+---
+
+## 2. The Hall of Mistakes & Negative Knowledge (被用户否决的方案与踩坑雷区)
+*CRITICAL: Record approaches that failed, caused user dissatisfaction, or were strictly rejected. New agents MUST NOT repeat these mistakes.*
+
+| # | Rejected Approach (被否决的错误方案) | Why It Failed / User Feedback (为什么被排除) |
+|---|---|---|
+| 1 | *Example: Inline boolean flag hacks* | *Caused unmaintainable spaghetti code; refactored to decoupled services.* |
+
+---
+
+## 3. Pre-flight Harmless Self-Check SOP (开工必跑自检)
+Before proposing or executing code changes, run these non-destructive commands:
+```bash
+git status --short
+# Run workspace integrity guard
+```
